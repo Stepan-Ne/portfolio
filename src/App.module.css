@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aquamarine;
+    width: 30%;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 2px;
+
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: bisque;
+    width: 60%;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 2px;
+}
