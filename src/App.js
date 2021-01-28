@@ -2,6 +2,16 @@ import React, {useReducer} from 'react';
 import s from  './App.module.css';
 import img from './image/iam.jpg';
 
+const myInfo = `Привет! Меня зовут Степан Небыков. Мне 35. Позади учеба в ВТУЗе, работа с радиотехникой на заводе и много фриланса. С декабря 2019 я стал изучть web-разработку: JS/TS, React-Redux, NodeJS и немного PHP. Эта сфера знаний мне очень нравится. Продолжаю осваивать новое, а накопившееся собираюсь выкладывать здесь или на gitHub.`
+const projects = [{
+    name:'gitHub', 
+    link: 'https://github.com/Stepan-Ne'
+}]
+const links = [{
+    name: 'Twitter', 
+    link: 'https://twitter.com/Stepan21497720'
+}]
+
 function App() {
 
     const initialState = {info: 'Hello World!'};
@@ -10,21 +20,21 @@ function App() {
             case 'about':
                 return {
                     ...state,
-                    info: 'My name is Steve Nebykov',
+                    info: myInfo,
                     image: img,
                     id: action.id
                 };
             case 'projects':
                 return {
                     ...state,
-                    info: 'There is link to my github: ',
+                    info: projects,
                     image: '',
                     id: action.id
                 };
             case 'contacts':
                 return {
                     ...state,
-                    info: 'Twitter: ',
+                    info: links,
                     image: '',
                     id: action.id
                 };
@@ -61,10 +71,16 @@ function App() {
                 }
             </div>
             <div className={s.description}>
-                <p> {state.info} </p>
+                {typeof state.info === 'string'
+                ?  <p className={s.infoText}> {state.info} </p>
+            : (<ul>
+                {state.info.map( (i, index) => <li key={index.toString()}>
+                <a className={s.link} href={i.link} target='_blank'><b>{i.name}</b></a>
+                </li> )}
+            </ul>)}
+            
+               
             </div>
-
-
         </div>
 
     </div>

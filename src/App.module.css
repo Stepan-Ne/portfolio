@@ -30,7 +30,7 @@ justify-content: center;
     background: bisque;
     width: 60%;
     height: 300px;
-    margin: 1rem;
+    margin: 1rem auto;
     border-radius: 2px;
 }
 .ava {
@@ -39,4 +39,11 @@ justify-content: center;
 }
 .description {
     flex-grow: 9;
+}
+.link {
+    text-decoration: none
+}
+
+.infoText {
+    margin-left: 1rem;
 }
