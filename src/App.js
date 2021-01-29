@@ -6,6 +6,10 @@ const myInfo = `Привет! Меня зовут Степан Небыков. �
 const projects = [{
     name:'gitHub', 
     link: 'https://github.com/Stepan-Ne'
+},
+{
+    name: 'SocialNetwork_proto. There is the trainig project from IT-Kamasutra',
+    link: 'https://stepan-ne.github.io/SocialNetwork/'
 }]
 const links = [{
     name: 'Twitter', 
