@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from 'react-router-dom'
+
+// basemname={`/${process.env.PUBLIC_URL}`}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router basemname={`/${process.env.PUBLIC_URL}`}> <App /></Router>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
