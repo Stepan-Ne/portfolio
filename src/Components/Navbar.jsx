@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <div class='w3-top w3-bar w3-black'>
-        <NavLink to='/about' className='w3-bar-item w3-button' activeClassName={s.active}>
+        <NavLink to='/portfolio' className='w3-bar-item w3-button' activeClassName={s.active}>
           About
         </NavLink>
         <NavLink to='/projects' className='w3-bar-item w3-button' activeClassName={s.active}>
