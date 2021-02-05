@@ -18,9 +18,8 @@ function About() {
 
             <div className='w3-container w3-center w3-margin-top'>
               <p>Привет! Я занимаюсь web-разработкой.</p>
-              <p>Мой стек: JS/TS, React/Redux, NodeJS, C#.</p>
-              <p>Мне нравится изучать новые технологи: .Net Core.</p>
-              <p>И совершентсвовать полученные навыки: React/Redux.</p>
+              <p>Mой стек: JavaScript/TypeScript, React/Redux, NodeJS, SQL.</p>
+              <p>Изучаю .Net Core</p>
             </div>
           </div>
         </div>
